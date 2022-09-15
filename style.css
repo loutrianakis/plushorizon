@@ -1,0 +1,421 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  box-sizing: content-box;
+  z-index: 99;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  header{
+    flex-direction: column;
+}
+}
+
+.top-bar-left{
+  padding-left: 30px; 
+
+}
+@media (max-width: 768px) {
+
+.top-bar-left{
+  display: flex;
+}
+
+}
+.title-bar{
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .top-bar-right {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: auto
+    }
+
+}
+
+@media (max-width: 768px) {
+  .top-bar-right{
+    height: 0;
+  }
+      .activeMobileMenu .top-bar-right{
+      height: auto;
+  }
+}
+
+
+.tns-nav{
+  display:none
+}
+
+.tns-controls{
+  position: relative;
+}
+
+.tns-controls button{
+  position: absolute;
+  z-index: 90;
+  font-size: 0;
+  border:none;
+  width:28px;
+  height: 28px;
+  top: 50px;
+}
+.tns-controls button:last-child{
+  right: -44px;
+  background: url(./assets/s-right.png) no-repeat;
+}
+
+.tns-outer{
+  margin-bottom: 60px;
+  width: 80%;
+} 
+
+.tns-outer{
+  margin-bottom: 60px;
+  width: 80%;
+} 
+
+.tns-outer > button{
+  display: none
+}
+.tns-controls button:first-child{
+  left: -44px;
+  background: url(./assets/s-left.png) no-repeat;
+}
+.menu-icon{
+  cursor: pointer;
+  display:flex;
+
+}
+
+.menu-icon svg{
+      margin-top: 17px;
+}
+.activeMobileMenu svg{
+  display: none;
+}
+.title-bar img{
+  display: none;
+  height:24px;
+  width:24px;
+}
+.activeMobileMenu .title-bar img{
+  display: block;
+} 
+@media (min-width: 768px) {
+  .menu-icon{
+    display:none;
+  }
+
+.title-bar img{
+  display: none
+ }
+}
+
+@media (max-width: 768px) {
+ h1 img {
+   height: 35px;
+ }
+}
+.title-bar img{
+  margin-top: 20px
+ }
+nav {
+  padding-right: 30px;
+  margin: 0;
+  padding: 0 20px;
+
+}
+nav ul {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0px;
+
+  margin: 0 
+}
+nav ul li {
+  display: flex;
+  margin-left: 25px;
+
+  margin-bottom: 0;
+
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: flex-end;
+    background-color: #F9F7F5;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+  }
+  nav ul li {
+    margin-left: 0px;
+    /* margin-bottom: 10px; */
+    width:100%;
+    padding:0 22px ;
+
+  }
+  nav ul li a {
+    border-bottom: 2px solid #fff;
+    width:100%; 
+    padding:10px 0;
+    text-align: right;
+  }
+}
+
+nav ul li a{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #343434;
+  text-decoration: none;
+}
+.slider img {
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+.slider img:hover {
+   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+main{
+  box-sizing: content-box;
+  margin: 0 20px 26px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F7F5;
+}
+.pageContainer {
+  width:  100%;
+  min-height:  100vh;
+  box-sizing: content-box;
+  display: flex;
+  position: relative;
+  background-position: -19px -71px;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+@media (max-width: 1024px) {
+  .pageContainer {
+    background-image: none!important; 
+  }
+}
+
+aside {
+  width: 780px;
+  margin-left: 300px;
+  padding-top: 15%;
+  /* padding-top: 20%; */
+  box-sizing: content-box;
+
+}
+@media (max-width: 768px) {
+  aside {
+    width: auto
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) { 
+  aside {
+    margin-left: 20%;
+  }
+}
+@media (min-width: 1024px) { 
+  aside {
+    padding-top: 200px;
+  }
+}
+@media (max-width: 768px){
+  aside {
+    margin: 116px auto 0 auto;
+    padding: 0 30px;
+    max-width:400px;
+  }
+}
+
+article h1{
+ font-family: "Ubuntu";
+ font-weight: 700;
+ font-size: 48px;
+ line-height: 56px;
+ color: #565656;
+ margin-top:14px;
+ margin-bottom: 36px;
+ max-width: 700px;
+}
+.bottomSvg{
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  right: 0
+}
+.activeMenuItem{
+   color: #E69731;
+}
+
+@media (max-width: 1024px) {
+  .pageContainer {
+    justify-content: center;
+  }
+   article {
+    margin-left: 0px;  
+  }
+  article h1{
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 350px;
+  }
+ }
+.line{
+  background: #E69731;
+  width: 200px;
+  height: 6px;
+}
+article h3{
+ font-family: "Ubuntu";
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 24px;
+ color: #565656;
+ margin: 0 0 5px 0;
+}
+
+article .button {
+ width: 198px;
+ height: 45px;
+ border: none;
+ background: #E69731;
+ font-family: "Ubuntu";
+ font-weight: 700;
+ font-size: 18px;
+ line-height: 27px;
+ color: #fff;
+ cursor: pointer;
+ text-decoration: none; 
+ padding: 10px 30px;
+}
+
+article p{
+ font-family: "Ubuntu";
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 27px;
+ color: #565656;
+ margin:0 0  36px 0;
+ max-width: 360px;
+}
+
+article a {
+  color: #E69731;
+}
+
+article {
+  width:100%;
+  height: 100%;
+  min-height:  100vh;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+@media (min-width: 480px) and (max-width: 1300px) { 
+  article {
+    background-size: 40%;
+   }
+ }
+
+ @media (max-width: 480px) { 
+  article {
+    background-size: 30%;
+   }
+   .tns-outer{
+      width: 100%;
+    } 
+ }
+
+
+
+
+#home{
+  background-image: url("./assets/home-top.png");
+}
+
+#home article{
+  background-image: url("./assets/home-bottom.png");
+}
+
+#whoWeAre{
+  background-image: url("./assets/who-we-are-top.png");
+}
+
+#whoWeAre article{
+  background-image: url("./assets/who-we-are-bottom.png");
+}
+
+#whatWeDo{
+  background-image: url("./assets/what-we-do-top.png");
+}
+
+#whatWeDo article{
+  background-image: url("./assets/what-we-do-bottom.png");
+}
+
+#clients{
+  background-image: url("./assets/contact-top.png");
+}
+
+#contactUs{
+  background-image: url("./assets/contact-top.png");
+}
+
+#contactUs article{
+  background-image: url("./assets/contact-bottom.png");
+}
+#clients aside{
+  width:72%!important;
+}
+
+/* .logo-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 0 100px 0;
+  padding: 0;
+  width:100%;
+}
+
+.logo-list li{
+  display: block;
+  justify-content: space-between;
+  margin:0;
+  padding: 0;
+  height: 100px;
+  margin-right: 16px;
+  margin-bottom: 16px
+} */
+
+.logo-list li img{ 
+  width: 100%
+}

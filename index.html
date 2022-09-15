@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plus Horizon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+  </head>
+  <body >
+    <header class="top-bar" id="responsive-menu" role="rowheader">
+      <section class="top-bar-left" role="row">
+      <h1 role="heading">
+        <a title="Plus Horizon" aria="banner" href="#"><img alt="PlusHorizon" src="./assets/logo 1.png"></a>
+      </h1>
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <div class="menu-icon" onClick="addNavigation()"  type="button" data-toggle="responsive-menu"><svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M28.779 3.94872H12.7084C11.6943 3.94872 10.8719 3.06379 10.8719 1.97436C10.8719 0.884204 11.695 0 12.7084 0H28.779C29.793 0 30.6155 0.884927 30.6155 1.97436C30.6155 3.06451 29.793 3.94872 28.779 3.94872Z" fill="#E69731"/>
+          <path d="M28.797 12.9744H1.9724C0.968327 12.9744 0.15394 12.0894 0.15394 11C0.15394 9.90985 0.968992 9.02564 1.9724 9.02564H28.797C29.8011 9.02564 30.6155 9.91057 30.6155 11C30.6155 12.0902 29.8011 12.9744 28.797 12.9744Z" fill="#E69731"/>
+          <path d="M1.9724 18.0513H28.797C29.8011 18.0513 30.6155 18.9362 30.6155 20.0256C30.6155 21.1158 29.8004 22 28.797 22H1.9724C0.968327 22 0.15394 21.1151 0.15394 20.0256C0.15394 18.9355 0.967726 18.0513 1.9724 18.0513Z" fill="#E69731"/>
+          </svg>
+          <img width="24" heigdht="24" src="./assets/exit.png">
+        </div>
+      </div>
+      
+    </section>
+     <section class="top-bar-right">
+
+        <nav>
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li><a class="menuItem" id="home-menuItem" title="HOME" onClick="makeActiveMenuItem()" href="#home">HOME</a></li>
+            <li><a class="menuItem" id="whoWeAre-menuItem" title="WHO WE ARE" onClick="makeActiveMenuItem()"  href="#whoWeAre">WHO WE ARE</a></li>
+            <li><a class="menuItem" id="whatWeDo-menuItem" title="WHAT WE DO" onClick="makeActiveMenuItem()" href="#whatWeDo">WHAT WE DO</a></li>
+            <li><a class="menuItem" id="clients-menuItem" title="Clients" onClick="makeActiveMenuItem()" href="#clients">CLIENTS</a></li>
+            <li><a class="menuItem" id="contactUs-menuItem" title="CONTACT" onClick="makeActiveMenuItem()" href="#contactUs">CONTACT</a></li>
+          </ul>
+        </nav>
+    </section>
+    </header>
+    <main >
+      <section id="home" role="row" class="pageContainer">
+        <article>
+           <aside>
+          <div class="line"></div>
+          <h1>Digital-first. Customer-centered. Startup-inspired. Enterprise-oriented.</h1>
+
+          <p>Plus Horizon is an information technology, consulting and business process services company, that develops expertise around the unique technology and challenges facing each of these industries in an increasingly digital, customer-first world.</p>
+          <p>Together with we are an innovation-led, enterprise transformation partner built for today’s digital challenges. We focus on the things that matter - insights, interactions, integrations, and innovations that make extraordinary things happen for brands, businesses and their customers.</p>
+          <a class="button"  onClick="makeActiveMenuItem()"  href="#whoWeAre" id="movetTowhoWeAre">WHO WE ARE</a>
+        </article>
+       </aside>
+      </section>
+      <section id="whoWeAre" role="row" class="pageContainer">
+        <article>
+          <aside>
+          <div class="line"></div>
+          <h1>Who we are</h1>  
+          
+          <p>We are a mix of strategists, creative directors, designers, writers, media strategists, digital marketers, developers and relationship builders. We’re committed to creating vibrant and relevant brand experiences on every level.</p>
+          <p>We bring a startup mindset and agile methods to both established companies and the public sector by meeting the demands of high velocity digital change with agility and cost efficiency.</p>
+          <p>We specialized in providing human capital for the support and development of application services that works at the intersection of cloud, analytics and emerging technologies to help our clients adapt to the digital world and make them successful. </p>
+          <a class="button" onClick="makeActiveMenuItem()"   type="button" href="#whatWeDo" id="movetToWhatWeDo">WHAT WE DO</a>
+          </aside>
+        </article>
+ 
+
+
+      </section>
+      <section id="whatWeDo" role="row" class="pageContainer">
+        <article>
+          <aside>
+          <div class="line"></div>
+          <h1>WHAT WE DO</h1>
+
+          <h3> Technology & Engineering</h3>
+          <p>Organizations must evolve to meet customers’ needs and enable employees to be efficient and effective. 
+          We are investing in agile engineering on a enterprise startup model with cross-functional teams and innovative technology to allow organizations to adapt their products and services. Our world-class engineers lead our clients through the challenging shift from legacy systems and ways of working to platforms and methods that enable them to adapt with speed and quality.</p>
+          <h3>Strategy & Consulting</h3>
+          <p>Our strategy and consulting teams work seamlessly with our experience and engineering teams to ensure we develop the most high-impact strategies to drive effective digital business transformation. An outside-in, customer-led perspective fuels our overall approach. And fusing experience and strategy with engineering brings together all the essential capabilities required for true digital leadership.</p>
+          <h3>Product Management</h3>
+          <p>Upgrade your Product Lifecycle Management practices and stay at the edge of modern Digital Product Development.
+          Increasing disruption in product ideation, design and delivery coupled with a continues  evolving culture, ways of working, metrics and relentless pursuit of customer and business value by utilizing effective teams and scaling agile to the enterprise.</p>
+          <a class="button" onClick="makeActiveMenuItem()"  href="#contactUs"  id="movetToClients">CONTACT US</a>
+          </aside>
+        </article>
+
+      </section>
+            <section id="clients" role="row" class="pageContainer">
+        <article>
+          <aside>
+          <div class="line"></div>
+          <h1>Clients</h1>
+           <div class="clients-slider slider">
+              <div><img src="./assets/1-client.png" alt="client" /></div>
+              <div><img src="./assets/2-client.png" alt="client" /></div>
+              <div><img src="./assets/3-client.png" alt="client" /></div>
+              <div><img src="./assets/4-client.png" alt="client" /></div>
+              <div><img src="./assets/5-client.png" alt="client" /></div>
+              <div><img src="./assets/6-client.png" alt="client" /></div>
+              <div><img src="./assets/7-client.png" alt="client" /></div>
+              <div><img src="./assets/8-client.png" alt="client" /></div>
+              <div><img src="./assets/9-client.png" alt="client" /></div>
+              <div><img src="./assets/10-client.png" alt="client" /></div>
+              <div><img src="./assets/11-client.png" alt="client" /></div>
+              <div><img src="./assets/12-client.png" alt="client" /></div>
+              <div><img src="./assets/13-client.png" alt="client" /></div>
+              <div><img src="./assets/14-client.png" alt="client" /></div>
+              <div><img src="./assets/15-client.png" alt="client" /></div>
+              <div><img src="./assets/16-client.png" alt="client" /></div>
+              <div><img src="./assets/17-client.png" alt="client" /></div>
+              <div><img src="./assets/18-client.png" alt="client" /></div>
+              <div><img src="./assets/19-client.png" alt="client" /></div>
+              <div><img src="./assets/20-client.png" alt="client" /></div>
+              <div><img src="./assets/21-client.png" alt="client" /></div>
+              <div><img src="./assets/22-client.png" alt="client" /></div>
+              <div><img src="./assets/23-client.png" alt="client" /></div>
+              <div><img src="./assets/24-client.png" alt="client" /></div>
+              <div><img src="./assets/25-client.png" alt="client" /></div>
+           </div>
+          <div  class="line"></div>
+          <h1>Partners</h1>
+           <div class="partners-slider slider">
+             <div><img src="./assets/1-partners.png" alt="partners" /></div>
+             <div><img src="./assets/2-partners.png" alt="partners" /></div>
+             <div><img src="./assets/3-partners.png" alt="partners" /></div>
+             <div><img src="./assets/4-partners.png" alt="partners" /></div>
+             <div><img src="./assets/5-partners.png" alt="partners" /></div>
+             <div><img src="./assets/6-partners.png" alt="partners" /></div>
+             <div><img src="./assets/7-partners.png" alt="partners" /></div>
+             <div><img src="./assets/8-partners.png" alt="partners" /></div>
+             <div><img src="./assets/9-partners.png" alt="partners" /></div>
+             <div><img src="./assets/11-partners.png" alt="partners" /></div>
+           </div>
+          
+          <a class="button" onClick="makeActiveMenuItem()"  href="#contactUs"  id="movetToClients">CONTACT US</a>
+          </aside>
+        </article>
+
+      </section>
+     <section id="contactUs" role="row" class="pageContainer">
+      <article>
+        <aside>
+        <div class="line"></div>
+        <h1>CONTACT</h1>
+
+        <p>Business Inquiries <br/>
+        Email: <a title="Email us" href="mailto:contact@plushorizon.com">contact@plushorizon.com</a> <br/>
+        Tel:  <a title="Call us" href="tel:00306981090797">+30 698 1090 797</a>
+      </p>
+      <p>Thank you for your interest in PlusHorizon services. </p>
+      </aside>
+      </article>
+
+
+
+     </section>
+    </main>
+  </body>
+  <script>
+    const makeActiveMenuItem = () => {
+        setTimeout(() => {  
+        const activePageItem =  /(?:#)(.*)/;
+        const match = activePageItem.exec(location.href);
+        if (!!match && match.length && !!match[0]) {
+          const activeMenuItem = document.querySelector(`.activeMenuItem`);
+          if(activeMenuItem) {
+            activeMenuItem.classList.remove('activeMenuItem')
+          }
+          document.querySelector(`${match[0]}-menuItem`).classList.add('activeMenuItem')
+          removeNavigation()
+        } else {
+          document.querySelector("#home-menuItem").classList.add('activeMenuItem')  
+          addNavigation()
+        }
+          removeNavigation()
+      }, 0)
+    }
+    const removeNavigation = () => {
+      const nav = document.querySelector(`.top-bar`);
+      nav.classList.remove("activeMobileMenu");
+    }
+
+    const addNavigation = () => {
+      const nav = document.querySelector(`.top-bar`);
+      nav.classList.toggle("activeMobileMenu");
+    }
+    
+    window.addEventListener('DOMContentLoaded', (event) => {
+        makeActiveMenuItem();
+    });
+    
+    function isVisible (ele) {
+    const { top, bottom } = ele.getBoundingClientRect();
+    const vHeight = (window.innerHeight || document.documentElement.clientHeight);
+
+    return (
+      (top > 0 || bottom > 0) &&
+      top < vHeight
+    );
+  }
+  
+   const onscroll = (pages) => {
+        pages.forEach(element => {
+
+        if(isVisible(element)) {
+
+          const navItem = document.querySelector(`.activeMenuItem`);
+
+          if (navItem && navItem.id !== `${element.id}-menuItem`) {        
+            navItem.classList.remove("activeMenuItem");
+            document.querySelector(`#${element.id}-menuItem`).classList.add('activeMenuItem');
+          }
+        
+          // window.location.hash = element.id;
+        }
+      })
+
+      }
+
+  const sliderConfig = {
+    autoWidth: true,
+    items: 5,
+    gutter: 10,
+    mouseDrag: true,
+    swipeAngle: false,
+    speed: 700,
+    "autoplay": true,
+    "autoplayTimeout": 1500,
+  }
+  const clientsSlider = tns({
+    container: '.clients-slider',
+    ...sliderConfig
+  });
+  const partnersSlider = tns({
+    container: '.partners-slider',
+    ...sliderConfig
+  });
+
+
+  const pages = [...document.querySelectorAll('.pageContainer')]
+    document.addEventListener('scroll', function(e) {
+    onscroll(pages)
+  });
+
+
+  
+    </script>
+</html>
